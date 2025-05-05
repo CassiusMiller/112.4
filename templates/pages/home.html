@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1 class="home">THE TALK</h1>
-<div class="homeBody">
-  <p>Welcome to the talk the best Blog where you can have a open dialog. Don't wait </p>
-  <a href="{% url 'login' %}" class="btn btn-outline-success">Join THE TALK</a>
+<div class="background">
+  <h1 class="home">THE TALK</h1>
+  <div class="homeBody">
+    <p>Welcome to the talk the best Blog where you can have a open dialog. Don't wait </p>
+    <a href="{% url 'login' %}" class="btn btn-outline-success">Join THE TALK</a>
+  </div>
 </div>
 {% endblock content %}
