@@ -5,9 +5,9 @@ from django.db import migrations
 
 def populate_status(apps, schemaeditor):
     entries = {
-    "published": "A post that anyone can view",
-    "draft": "A post visible only to the author",
-    "archived": "An older post, visible only to logged in users"
+        "published": "A post that anyone can view",
+        "draft": "A post visible only to the author",
+        "archived": "An older post, visible only to logged in users"
     }
     Status = apps.get_model("posts", "Status")
     for key, value in entries.items():
