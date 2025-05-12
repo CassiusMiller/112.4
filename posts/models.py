@@ -8,7 +8,7 @@ class Status (models.Model):
   description = models.CharField (max_length=256)
   
   def __str__(self):
-    return self. name
+    return self.name
 
 class Post (models.Model):
   title = models.CharField (max_length=128)
